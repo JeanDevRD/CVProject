@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CV Maker</title>
+  <link rel="stylesheet" href="assets/css/lib/bootstrap/bootstrap.min.css">
+  <link rel="stylesheet" href="assets/css/site/main.css">
+</head>
+
+<body>
+  <header>
+    <nav class="navbar navbar-expand-lg bg-body-tertiary" data-bs-theme="dark">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">Crear CV</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup"
+          aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+          <div class="navbar-nav">
+            <a class="nav-link active" aria-current="page" href="#">Inicio</a>
+          </div>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <main class="container mt-3">
+    <section>
+      <h1 class="fs-4 text-center mb-4">Agrega tus datos para crear el CV</h1>
+      <div class="row justify-content-center">
+        <div class="col-12 col-sm-8 border rounded p-3 shadow-sm">
+          <div>
+            <h4 class="fs-5 border-bottom pb-2 mb-4">Información Personal</h4>
+
+            <div class="row">
+              <div class="col-md-6 mb-3">
+                <label class="form-label" for="name">Nombre</label>
+                <input type="text" class="form-control" id="name">
+              </div>
+
+              <div class="col-md-6 mb-3">
+                <label class="form-label" for="title">Título Profesional</label>
+                <input type="text" class="form-control" id="title">
+              </div>
+
+              <div class="col-md-6 mb-3">
+                <label class="form-label" for="email">Correo</label>
+                <input type="email" class="form-control" id="email">
+              </div>
+
+              <div class="col-md-6 mb-3">
+                <label class="form-label" for="phone">Teléfono</label>
+                <input type="text" class="form-control" id="phone">
+              </div>
+              <div class="col-md-6 mb-3">
+                <label class="form-label" for="time">Fecha</label>
+                <input type="date" class="form-control" id="time">
+              </div>
+
+              <div class="col-md-6 mb-3">
+                <label class="form-label" for="link">Enlace a tu linkedin</label>
+                <input type="url" class="form-control" id="link">
+              </div>
+            </div>
+
+            <h4 class="fs-5 border-bottom pb-2 mb-3 mt-4">Habilidades</h4>
+            <div class="mb-3">
+              <div class="row align-items-end">
+                <div class="col-md-6 mb-2">
+                  <input type="text" class="form-control" placeholder="Nombre del skill">
+                </div>
+                <div class="col-md-4 mb-2">
+                  <select class="form-select">
+                    <option value="">Nivel</option>
+                    <option>1</option>
+                    <option>2</option>
+                    <option>3</option>
+                    <option>4</option>
+                    <option>5</option>
+                  </select>
+                </div>
+                <div class="col-md-2 mb-2">
+                  <button type="button" class="btn btn-outline-primary w-100 add-skill">+</button>
+                </div>
+              </div>
+
+              <div class="added-skills mt-2"></div>
+            </div>
+
+            <h4 class="fs-5 border-bottom pb-2 mb-3 mt-4">Software</h4>
+            <div class="mb-3">
+              <div class="row align-items-end">
+                <div class="col-md-6 mb-2">
+                  <input type="text" class="form-control" placeholder="Nombre del software">
+                </div>
+                <div class="col-md-4 mb-2">
+                  <select class="form-select">
+                    <option value="">Nivel</option>
+                    <option>1</option>
+                    <option>2</option>
+                    <option>3</option>
+                    <option>4</option>
+                    <option>5</option>
+                  </select>
+                </div>
+                <div class="col-md-2 mb-2">
+                  <button type="button" class="btn btn-outline-primary w-100 add-software">+</button>
+                </div>
+              </div>
+              <div class="added-software mt-2"></div>
+            </div>
+
+            <h4 class="fs-5 border-bottom pb-2 mb-3 mt-4">Idiomas</h4>
+            <div class="mb-3">
+              <div class="row align-items-end">
+                <div class="col-md-6 mb-2">
+                  <input type="text" class="form-control" placeholder="Nombre del idioma">
+                </div>
+                <div class="col-md-4 mb-2">
+                  <select class="form-select">
+                    <option value="">Nivel</option>
+                    <option>1</option>
+                    <option>2</option>
+                    <option>3</option>
+                    <option>4</option>
+                    <option>5</option>
+                  </select>
+                </div>
+                <div class="col-md-2 mb-2">
+                  <button type="button" class="btn btn-outline-primary w-100 add-language">+</button>
+                </div>
+              </div>
+              <div class="added-languages mt-2"></div>
+            </div>
+
+            <h4 class="fs-5 border-bottom pb-2 mb-3 mt-4">Resumen Profesional</h4>
+            <div class="mb-3">
+              <textarea class="form-control" rows="4" placeholder="Describe tu carrera y objetivos"></textarea>
+            </div>
+
+            <h4 class="fs-5 border-bottom pb-2 mb-3 mt-4">Experiencia Laboral</h4>
+            <div class="mb-3">
+              <div class="row align-items-end">
+                <div class="col-md-4 mb-2">
+                  <input type="text" class="form-control" placeholder="Empresa">
+                </div>
+                <div class="col-md-3 mb-2">
+                  <input type="date" class="form-control">
+                </div>
+                <div class="col-md-3 mb-2">
+                  <input type="date" class="form-control">
+                </div>
+                <div class="col-md-2 mb-2">
+                  <button type="button" class="btn btn-outline-primary w-100 add-experience">+</button>
+                </div>
+              </div>
+              <div class="added-experience mt-2"></div>
+            </div>
+
+            <h4 class="fs-5 border-bottom pb-2 mb-3 mt-4">Educación</h4>
+            <div class="mb-3">
+              <div class="row align-items-end">
+                <div class="col-md-4 mb-2">
+                  <input type="text" class="form-control" placeholder="Institución">
+                </div>
+                <div class="col-md-3 mb-2">
+                  <input type="date" class="form-control">
+                </div>
+                <div class="col-md-3 mb-2">
+                  <input type="date" class="form-control">
+                </div>
+                <div class="col-md-2 mb-2">
+                  <button type="button" class="btn btn-outline-primary w-100 add-education">+</button>
+                </div>
+              </div>
+              <div class="added-education mt-2"></div>
+            </div>
+
+            <h4 class="fs-5 border-bottom pb-2 mb-3 mt-4">Certificaciones</h4>
+            <div class="mb-3">
+              <div class="row align-items-end">
+                <div class="col-md-4 mb-2">
+                  <input type="text" class="form-control" placeholder="Certificación">
+                </div>
+                <div class="col-md-3 mb-2">
+                  <input type="date" class="form-control">
+                </div>
+                <div class="col-md-3 mb-2">
+                  <input type="date" class="form-control">
+                </div>
+                <div class="col-md-2 mb-2">
+                  <button type="button" class="btn btn-outline-primary w-100 add-certification">+</button>
+                </div>
+              </div>
+              <div class="added-certifications mt-2"></div>
+            </div>
+            <div>
+              <button type="button" onclick="generateCV()" class="btn btn-outline-primary float-end">
+                Save
+              </button>
+              <button type="button" onclick="clearForm()" class="btn btn-outline-warning float-end me-2">
+                Clear
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <hr class="my-4">
+    <section>
+      <h2 class="fs-4 text-center mb-4">CV Generado</h2>
+
+      <div class="row justify-content-center">
+
+        <div class="col-12 col-md-4 bg-dark text-white p-3 rounded shadow-sm cv-left">
+          <p class="text-center text-muted">El CV aparecerá aquí después de completar el formulario</p>
+        </div>
+
+        <div class="col-12 col-md-8 p-3">
+          <p class="text-center text-muted">Completa el formulario y presiona "Generar CV"</p>
+        </div>
+      </div>
+    </section>
+
+  </main>
+  <footer>
+    <script src="assets/js/lib/bootstrap/bootstrap.min.js"></script>
+    <script src="assets/js/site/index.js"></script>
+  </footer>
+</body>
+
+</html>

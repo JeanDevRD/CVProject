@@ -1,0 +1,14 @@
+.input-error{
+    border-color: red;
+    border-width: medium;
+}
+
+.input-success{
+    border-color: #35810c;
+    border-width: medium;
+}
+
+.cv-left img {
+  max-width: 120px;
+  height: auto;
+}
